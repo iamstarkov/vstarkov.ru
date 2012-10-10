@@ -1,0 +1,12 @@
+---
+layout: default
+title: Владимир Старков — Технический блог; главная страница
+---
+
+<ul class="posts">
+	{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</li>
+	{% endfor %}
+</ul>
