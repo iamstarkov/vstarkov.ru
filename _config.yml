@@ -1,4 +1,4 @@
 safe:        false
 auto:        true
 server:      yes
-permalink:   blog/:title.html
+permalink:   :title/
