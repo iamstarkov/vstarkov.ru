@@ -1,5 +1,12 @@
 .logo {
-	width: 32px;
-	height: 32px;
+	width: 42px;
+	height: 42px;
 	background: url('/img/logo.svg');
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.navbar .brand {
+	padding-left: 52px;
 }
