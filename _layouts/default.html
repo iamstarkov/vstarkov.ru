@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
 	<!-- 
 	<link href="/css/reset.css"      rel="stylesheet" />
 	<link href="/css/layout.css"     rel="stylesheet" />
@@ -24,20 +25,23 @@
 </head>
 <body>
 
-<div id="skip-links">
-	<a href="#main" title="Skip to content area">Skip to content area</a>
-</div>
-
-<div class="wrap">
+<div class="wrap row-fluid">
+	
 	<!-- HEADER -->
-	<header>
-		<a href="/" class="logo">
-			Владимир Старков
-		</a>
+	<header class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="/">
+				<img class="logo pull-left" src="/img/logo.svg" alt="">
+				Владимир Старков
+			</a>
+			<ul class="nav">
+				<li><a href="#">Обо мне</a></li>
+			</ul>
+		</div>
 	</header>
 	<!-- /HEADER -->
 
-	<div class="main_wrap">
+	<div class="span6 offset3">
 		{{ content }}
 	</div>
 
