@@ -9,10 +9,19 @@ ETALONE ABOUT PAGE:
 	http://viget.com/about/team/davery
  -->
 
-<ul class="posts">
-	{% for post in site.posts %}
-		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
-		</li>
+{% for year in site.years %}
+	<h2>{{ year.first.first.date | date: "%Y" }}</h2>
+	{% for month in year %}
+		<h3>
+			{{ month.first.date | date: "%B" | replace:"January","Январь" | replace:"February","Февраль" | replace:"March","Март" | replace:"April","Апрель" | replace:"May","Май" | replace:"June","Июнь" | replace:"July","Июль" | replace:"August","Август" | replace:"September","Сентябрь" | replace:"October","Октябрь" | replace:"November","Ноябрь" | replace:"December","Декабрь"}}
+			</h3>
+		<dl class="dl-horizontal">
+		{% for post in month %}
+			<dt>{{post.date  | date: "%d"}}</dt>			
+			<dd>
+				<a href="{{ post.url}}">{{ post.title }}</a>
+			</dd>
+		{% endfor %}
+		</dl>
 	{% endfor %}
-</ul>
+{% endfor %}

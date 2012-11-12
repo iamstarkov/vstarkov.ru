@@ -11,15 +11,8 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/css/bootstrap.neg-offset.css" rel="stylesheet" />
 	<link href="/css/style.css" rel="stylesheet" />
-	<!-- 
-	<link href="/css/reset.css"      rel="stylesheet" />
-	<link href="/css/layout.css"     rel="stylesheet" />
-	<link href="/css/typo.css"       rel="stylesheet" />
-	<link href="/css/meslo.css"      rel="stylesheet" />
-	<link href="/css/decoration.css" rel="stylesheet" />
-	<link href="/css/print.css"      rel="stylesheet" />
-	 -->
 
 	<link href="/atom.xml" title="{{ page.title }}" rel="alternate" type="application/atom+xml" />
 
@@ -28,24 +21,29 @@
 </head>
 <body>
 
-<div class="wrap row-fluid">
+<div class="wrap">
 	
 	<!-- HEADER -->
-	<header class="navbar">
+	<div class="navbar">
 		<div class="navbar-inner">
 			<a class="brand" href="/">
 				<img src="/img/logo.svg" class="logo pull-left" alt="" />
 				Владимир Старков
 			</a>
 			<ul class="nav">
-				<li><a href="/atom.xml">РСС</a></li>
+				<li><a href="#">РСС</a></li>
+			</ul>
+			<ul class="nav pull-right">
+				<li><a href="http://vstarkov.com/">English</a></li>
 			</ul>
 		</div>
-	</header>
+	</div>
 	<!-- /HEADER -->
 
-	<div class="span6 offset3">
-		{{ content }}
+	<div class="row">
+		<div class="span6 offset3">
+			{{ content }}
+		</div>
 	</div>
 
 </div>
