@@ -1,11 +1,12 @@
 .logo {
-	width: 42px;
-	height: 42px;
+	width: 62px;
+	height: 62px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: block;
 }
 
 .navbar .brand {
-	padding-left: 52px;
+	padding-left: 68px;
 }
