@@ -96,10 +96,10 @@ categories : [css]
 
 После этого рассмотрите модифицированной мной решение Рэйдмэйкера:
 
+
     $ git status // посмотрите, что надо закоммитить
     $ git add // добавьте это в коммит
     $ git commit // закоммитьте
-    $ jekyll 
     $ git checkout gh-pages && git merge master // синхронизируем с главной веткой,
     $ cp -r _site/* . && rm -rf _site/ && touch .nojekyll 
     $ git add .
