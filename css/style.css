@@ -10,3 +10,23 @@
 .navbar .brand {
 	padding-left: 68px;
 }
+
+.dabblet {
+	width: 100%;
+    height: 600px;
+}
+
+
+.modal--iframe {
+	width: 90%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.daynumber--index {
+	float: left;
+	text-align: center;
+	width: 4em;
+	font-weight: bold;
+}
