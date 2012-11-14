@@ -134,6 +134,7 @@ categories : [css]
     $ git commit -am 'converted to flat site' 
     $ git checkout master && git push --all
 
+
 `git commit -am 'smth'` === `git add . && git commit -m 'smth'`  
 Второй шаг:
 
