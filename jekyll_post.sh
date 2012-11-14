@@ -1,11 +1,15 @@
-git checkout gh-pages
-git merge master  
+# http://edhedges.com/blog/2012/07/30/jekyll-with-plugins-hosted-on-github-pages/
+# 
+# These commands assume that you have a master branch and a development branch 
+# named them whatever you want. Mine are named master and dev.
+# 
+# master — generated html blog
+# dev — jekyll source of blog
+# 
+# git update-ref refs/heads/master $(echo 'Add commit message here!' | git commit-tree dev^{tree}:_site -p $(cat .git/refs/heads/master))
 
-shopt -s extglob
-rm !(_site) -r
-mv _site/* ./
-rm _site -r
 
-git commit -am 'converted to flat site'
-git checkout master
-git push --all
+# MOdified for Github pages specificity:
+# gh-pages — generated html blog
+# master — jekyll source of blog
+git update-ref refs/heads/gh-pages $(echo 'Add commit message here!' | git commit-tree master^{tree}:_site -p $(cat .git/refs/heads/gh-pages))
