@@ -1,14 +1,9 @@
 .logo {
 	width: 62px;
 	height: 62px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-}
-
-.navbar .brand {
-	padding-left: 68px;
+	margin-top: -17px;
+	margin-bottom: -17px;
+	margin-right: 12px;
 }
 
 .dabblet {

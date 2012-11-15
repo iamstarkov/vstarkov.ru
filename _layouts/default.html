@@ -22,27 +22,45 @@
 <body>
 
 <div class="wrap">
-	
-	<!-- HEADER -->
 	<div class="navbar">
 		<div class="navbar-inner">
-			<a class="brand" href="/">
-				<img src="/img/logo.svg" class="logo pull-left" alt="" />
-				Владимир Старков
-			</a>
-			<ul class="nav">
-				<li><a href="#">РСС</a></li>
-			</ul>
-			<ul class="nav pull-right">
-				<li><a href="http://vstarkov.com/">English</a></li>
-			</ul>
+			<div class="container">
+
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+
+				<!-- Be sure to leave the brand out there if you want it shown -->
+				<a class="brand" href="#">
+					<a class="brand" href="/">
+						<img src="/img/logo.svg" class="logo pull-left" alt="" />
+						Владимир Старков
+					</a>
+				</a>
+
+				<!-- Everything you want hidden at 940px or less, place within here -->
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a href="#">РСС</a></li>
+					</ul>
+					<ul class="nav pull-right">
+						<li><a href="http://vstarkov.com/">English</a></li>
+					</ul>
+				</div>
+
+			</div>
 		</div>
 	</div>
 	<!-- /HEADER -->
-
-	<div class="row">
-		<div class="span6 offset3">
-			{{ content }}
+	
+	<div class="container">
+		<div class="row">
+			<div class="span6 offset3">
+				{{ content }}
+			</div>
 		</div>
 	</div>
 
