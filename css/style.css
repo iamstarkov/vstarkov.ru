@@ -25,3 +25,15 @@
 	width: 4em;
 	font-weight: bold;
 }
+
+.about-image {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	max-height: 100%;
+	right: 0;
+}
+
+.lead--about {
+	color: #1496bb;
+}
