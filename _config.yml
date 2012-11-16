@@ -1,4 +1,34 @@
-safe:        false
-auto:        true
-server:      yes
-permalink:   /:title/
+safe:           false
+auto:           true
+server:         yes
+permalink:      /:title/
+
+site_url:       'http://vstarkov.ru'
+site_rss:       '/atom.xml'
+site_mail:      'privet@vstarkov.ru'
+site_name:      'Владимир Старков'
+site_title:     'Владимир Старков; Технический блог'
+
+disqus_id:      'starkovru'
+g_analytics_id: 'UA-33089484-1'
+
+mirror_url:     'http://vstarkov.com'
+mirror_title:   'English site'
+
+i18n_lang_code: 'ru'
+i18n_about:     'Обо мне'
+i18n_rss:       'РСС'
+i18n_close:     'Закрыть'
+
+i18n_january:   'Январь'
+i18n_february:  'Февраль'
+i18n_march:     'Март'
+i18n_april:     'Апрель'
+i18n_may:       'Май'
+i18n_june:      'Июнь'
+i18n_july:      'Июль'
+i18n_august:    'Август'
+i18n_september: 'Сентябрь'
+i18n_october:   'Октябрь'
+i18n_november:  'Ноябрь'
+i18n_december:  'Декабрь'

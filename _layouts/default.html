@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="LTR" lang="ru">
+<html dir="LTR" lang="{{site.i18n_lang_code}}">
 <head>
 	<meta charset="utf-8" />
 	<title>{{ page.title }}</title>
@@ -21,6 +21,7 @@
 </head>
 <body>
 
+
 <div class="wrap">
 	<div class="navbar">
 		<div class="navbar-inner">
@@ -37,18 +38,22 @@
 				<a class="brand" href="#">
 					<a class="brand" href="/">
 						<img src="/img/logo.svg" class="logo pull-left" alt="" />
-						Владимир Старков
+						{{site.site_name}}
 					</a>
 				</a>
 
 				<!-- Everything you want hidden at 940px or less, place within here -->
 				<div class="nav-collapse collapse">
 					<ul class="nav">
-						<li><a href="/about/">Обо мне</a></li>
-						<li><a href="#">РСС</a></li>
+						<li><a href="/about/">{{site.i18n_about}}</a></li>
+						<li><a href="{{site.site_rss}}">{{site.i18n_rss}}</a></li>
 					</ul>
 					<ul class="nav pull-right">
-						<li><a href="http://vstarkov.com/">English</a></li>
+						<li>
+							<a href="{{site.mirror_url}}">
+								{{site.mirror_title}}
+							</a>
+						</li>
 					</ul>
 				</div>
 
@@ -70,7 +75,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/plugins/fotorama.js"></script>
-<link href="/js/plugins/fotorama.css" rel="stylesheet" />
+<link  href="/js/plugins/fotorama.css" rel="stylesheet" />
 <script>
 	fotoramaDefaults = {
 		transition: 'fade',
@@ -99,8 +104,6 @@
 
 				event.preventDefault()
 			})
-			/*
-			 */
 		})()
 
 	});
@@ -113,15 +116,13 @@
 		<iframe class="dabblet"> </iframe>
 	</div>
 	<div class="modal-footer">
-		<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+		<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">{{site.i18n_close}}</button>
 	</div>
 </div>
 
 
-<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-	 mathiasbynens.be/notes/async-analytics-snippet -->
 <script>
-	var _gaq=[['_setAccount','UA-33089484-1'],['_trackPageview']];
+	var _gaq=[['_setAccount','{{site.g_analytics_id}}'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	s.parentNode.insertBefore(g,s)}(document,'script'));
