@@ -20,13 +20,3 @@ desc 'serve locally on jekyll'
 task :serve do
   sh "#{SET_CMD} LANG=#{LANG} && jekyll --server --auto"
 end
-
-desc 'serve locally on rack/sinatra'
-task :rackup => :generate do
-  sh "#{SET_CMD} LANG=#{LANG} && rackup config.ru"
-end
-
-desc 'serve locally on thin/sinatra'
-task :thin => :generate do
-  sh "#{SET_CMD} LANG=#{LANG} && thin start"
-end
