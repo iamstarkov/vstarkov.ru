@@ -37,3 +37,15 @@
 .lead--about {
 	color: #1496bb;
 }
+
+article p:first-of-type::first-line {
+	font-variant: small-caps;
+}
+
+p::first-letter {
+	font-family: Gabriola; /* available on Windows 7, and on Mac OS */
+	-webkit-font-feature-settings: "ss07";
+	   -moz-font-feature-settings: "ss07";
+			font-feature-settings: "ss07";
+	font-size: 2em;
+}
