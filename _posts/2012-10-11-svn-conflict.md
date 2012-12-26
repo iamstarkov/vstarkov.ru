@@ -1,6 +1,7 @@
 ---
 layout: post
 title: local delete/edit, incoming delete upon update
+isNotTranslated: true
 categories : [svn]
 ---
 

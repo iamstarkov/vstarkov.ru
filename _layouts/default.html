@@ -48,7 +48,9 @@
 						<li><a href="{{site.site_rss}}">{{site.i18n_rss}}</a></li>
 					</ul>
 					
-					{% if page.translation %}
+					{% if page.isNotTranslated %}
+					
+					{% else %}
 						<ul class="nav pull-right">
 							<li>
 								<a 

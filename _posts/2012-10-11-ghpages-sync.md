@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Как синхронизировать 'github pages' c 'master' веткой
+isNotTranslated: true
 categories : [git]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Мои интересные CSS ответы на Stackoverflow
+isNotTranslated: true
 categories : [css]
 ---
 
