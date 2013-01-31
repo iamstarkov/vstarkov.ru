@@ -2,7 +2,6 @@
 layout: post
 title: Что почитать фронтенд разрабочику в бумажном варианте?
 categories : [books, html, css]
-isNotTranslated: false
 ---
 
 Что почитать фронтенд разрабочику в бумажном варианте?
