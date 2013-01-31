@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Useless social nets and maybe harmfull
 title: Бесполезные и может быть вредные социальные сети
 categories : [Social nets]
 ---
