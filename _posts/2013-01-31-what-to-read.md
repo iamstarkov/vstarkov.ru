@@ -16,42 +16,50 @@ isNotTranslated: false
 
 ## HTML ##
 
-* 363 — [Изучаем HTML5. Библиотека специалиста (Реми Шарп, Библиотека специалиста)](http://www.ozon.ru/context/detail/id/7622650/)
-* 310 — [HTML5. Рецепты программирования (O'Reilly)](http://www.ozon.ru/context/detail/id/17513568/)
-* 612 — [HTML5 для веб-дизайнеров (A Book Apart)](http://www.ozon.ru/context/detail/id/19431055/)
+* [Изучаем HTML5. Библиотека специалиста (Реми Шарп, Библиотека специалиста)](http://www.ozon.ru/context/detail/id/7622650/)
+* [HTML5. Рецепты программирования (O'Reilly)](http://www.ozon.ru/context/detail/id/17513568/)
+* [HTML5 для веб-дизайнеров (A Book Apart)](http://www.ozon.ru/context/detail/id/19431055/)
 
-Первая книга мною была незамечена, но рекомендована [Вадимом Макеевым](http://pepelsbey.net/). Её написал [Реми Шарп](http://remysharp.com/), рано или поздно вы всё были на его сайте. Остальные книги в этой категории были выбраны по издательству и после просмотра оглавления были утверждены.
+Первая книга мною была незамечена, но рекомендована [Вадимом Макеевым](http://pepelsbey.net/). Её написал [Реми Шарп](http://remysharp.com/), рано или поздно вы всё были на его сайте. Остальные книги в этой категории были выбраны по издательству и после просмотра оглавления были утверждены.  
+Общая цена: [363 + 310 + 612 = 1 285 рублей](https://duckduckgo.com/?q=363+%2B+310+%2B+612%3D).
 
 ## CSS ##
 
-* 1 159 — [CSS-каскадные таблицы стилей. Подробное руководство (Эрик Мейер)](http://www.ozon.ru/context/detail/id/3881079/)
-* 419 — [CSS ручной работы (Библиотека специалиста)](http://chitai-gorod.ru/catalog/book/327333/)
-* 354 — [Сила CSS3. Освой новейший стандарт веб-разработок! (Библиотека специалиста)](http://www.ozon.ru/context/detail/id/7449521/)
-* 610 — [Отзывчивый веб-дизайн (A Book Apart)](http://www.ozon.ru/context/detail/id/8747299/)
-* 648 — [Сначала мобильные! (A Book Apart)](http://www.ozon.ru/context/detail/id/15708347/)
-* 612 — [CSS3 для веб-дизайнеров (A Book Apart)](http://www.ozon.ru/context/detail/id/19431033/)
+* [CSS-каскадные таблицы стилей. Подробное руководство (Эрик Мейер)](http://www.ozon.ru/context/detail/id/3881079/)
+* [CSS ручной работы (Библиотека специалиста)](http://chitai-gorod.ru/catalog/book/327333/)
+* [Сила CSS3. Освой новейший стандарт веб-разработок! (Библиотека специалиста)](http://www.ozon.ru/context/detail/id/7449521/)
+* [Отзывчивый веб-дизайн (A Book Apart)](http://www.ozon.ru/context/detail/id/8747299/)
+* [CSS3 для веб-дизайнеров (A Book Apart)](http://www.ozon.ru/context/detail/id/19431033/)
+* [Сначала мобильные! (A Book Apart)](http://www.ozon.ru/context/detail/id/15708347/)
 
-Хочу заметить, что первая книга от [Эрика Мейера](http://meyerweb.com/) — создателя reset.css и бесспорный авторитета в мире CSS. Ещё кажутся полезными книги от издательства «A Book Apart»
+
+Хочу заметить, что первая книга от [Эрика Мейера](http://meyerweb.com/) — создателя reset.css и бесспорный авторитета в мире CSS. Ещё кажутся полезными книги от издательства «A Book Apart».  
+Общая цена: [1159 + 419 + 354 + 610 + 648 + 612 = 3 802 рублей](https://duckduckgo.com/?q=1159+%2B+419+%2B+354+%2B+610+%2B+648+%2B+612+%3D).
 
 ## JavaScript ##
 
-* 1 823 — [JavaScript. Подробное руководство (O'Reilly)](http://www.ozon.ru/context/detail/id/19677670/)
-* 315 — [Веб-приложения на JavaScript (O'Reilly)](http://www.ozon.ru/context/detail/id/8798187/)
-* 290 — [JavaScript: сильные стороны (O'Reilly)](http://www.ozon.ru/context/detail/id/8144634/)
+* [JavaScript. Подробное руководство (O'Reilly)](http://www.ozon.ru/context/detail/id/19677670/)
+* [Веб-приложения на JavaScript (O'Reilly)](http://www.ozon.ru/context/detail/id/8798187/)
+* [JavaScript: сильные стороны (O'Reilly)](http://www.ozon.ru/context/detail/id/8144634/)
 
-Первый манускрипт от отменного автора — [Дэвида Флэнагана](http://www.davidflanagan.com/), остальные книги от O'Reilly тоже должны быть полезны.
+Первый манускрипт от отменного автора — [Дэвида Флэнагана](http://www.davidflanagan.com/), остальные книги от O'Reilly тоже должны быть полезны.  
+Общая цена: [1823 + 315 + 290 = 2 428](https://duckduckgo.com/?q=1823+%2B+315+%2B+290+%3D).
 
 ### jQuery ###
 
-* 1 041 — [jQuery. Подробное руководство по продвинутому JavaScript (Иеуда Кац)](http://www.ozon.ru/context/detail/id/6277333/)
+* [jQuery. Подробное руководство по продвинутому JavaScript (Иеуда Кац)](http://www.ozon.ru/context/detail/id/6277333/)
 
 Что можно добавить к книге про инструмент [созданный](http://jquery.org/team/) [автором](http://yehudakatz.com/) этого инструмента? 
 — ничего. Эта книга обязательно к прочтению.
 
 ## Дизайн ##
 
-* 590 — [Дизайн – это работа (A Book Apart)](http://www.ozon.ru/context/detail/id/19636870/)
-* 648 — [Эмоциональный веб-дизайн (A Book Apart)](http://www.ozon.ru/context/detail/id/8747236/)
-* 331 — [Умный дизайн. Простые приемы разработки пользовательских интерфейсов (Библиотека специалиста)](http://www.ozon.ru/context/detail/id/16905899/)
+* [Дизайн – это работа (A Book Apart)](http://www.ozon.ru/context/detail/id/19636870/)
+* [Эмоциональный веб-дизайн (A Book Apart)](http://www.ozon.ru/context/detail/id/8747236/)
+* [Умный дизайн. Простые приемы разработки пользовательских интерфейсов (Библиотека специалиста)](http://www.ozon.ru/context/detail/id/16905899/)
 
-В секции дизайна я доверился издательству «A Book Apart», серии «Библиотека специалиста» и живым отзывам с [«HappyDev»](http://happydev.ru/).
+В секции дизайна я доверился издательству «A Book Apart», серии «Библиотека специалиста» и живым отзывам с [«HappyDev»](http://happydev.ru/).  
+Общая цена: [590 + 648 + 331 = 1 569](https://duckduckgo.com/?q=590+%2B+648+%2B+331+%3D).
+
+------------
+Побочным эффектом, составления списка стало открытие, что библиотека это недешево совсем — шутка ли, общая цена всех книг [10 125](https://duckduckgo.com/?q=1285+%2B+3802+%2B+2428+%2B+1041+%2B+1569) рублей, что немало, и это только немногие хорошие книги.
