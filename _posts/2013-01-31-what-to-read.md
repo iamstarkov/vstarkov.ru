@@ -2,6 +2,7 @@
 layout: post
 title: Что почитать фронтенд разработчику в бумажном варианте?
 categories : [books, html, css]
+isNotTranslated: true
 ---
 
 Что почитать фронтенд разработчику в бумажном варианте?
