@@ -29,3 +29,7 @@ categories : [css]
 
 
 Все счастливы.
+
+**Update:** для работы с гзипованным дампом используйте `gunzip`:
+
+    gunzip < db.sql.gz | mysql -uUSER -pPSWD database
