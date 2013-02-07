@@ -3,6 +3,8 @@ auto:           true
 server:         yes
 permalink:      /:title/
 
+markdown:       kramdown
+
 site_url:       'http://vstarkov.ru'
 site_rss:       '/atom.xml'
 site_mail:      'privet@vstarkov.ru'
