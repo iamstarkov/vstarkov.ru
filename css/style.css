@@ -43,22 +43,22 @@ body {
 	color: #1496bb;
 }
 
-article > p:first-of-type {
+article div > p:first-of-type {
 	margin-top: 4em;
 }
 
-article > p:first-of-type::first-line {
+article div > p:first-of-type::first-line {
 	font-variant: small-caps;
 }
 
-article > p:first-of-type::first-letter {
+article div > p:first-of-type::first-letter {
 	font-family: Gabriola; /* available on Windows 7, and on Mac OS */
 
 	-webkit-font-feature-settings: "ss07";
 	   -moz-font-feature-settings: "ss07";
 			font-feature-settings: "ss07";
 	
-	font-size: 6em;
+	font-size: 4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
