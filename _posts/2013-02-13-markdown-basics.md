@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Основы маркдауна
+title: Основы markdown
 isNotTranslated: true
 categories : [markdown, workspace]
 ---
 
-Основы маркдауна
+Основы markdown
 ================================================================================
 
 1. [Вступление](#intro)
