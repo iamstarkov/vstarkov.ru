@@ -5,10 +5,36 @@ title: Владимир Старков; технический блог
 
 <div class="span6 offset3">
 
+	{% assign year="exampleYear" %}
+	{% assign month="exampleMonth" %}
+	{% assign day="exampleDay" %}
+	
 	<ul class="unstyled">
 		{% for post in site.posts %}
+			{% assign postYear=post.date | date: "%Y" %}
+			{% assign postMonth=post.date | date: "%B" %}
+			{% assign postDay=post.date | date: "%d" %}
+
+			{% if year != postYear %}
+				{% assign year=postYear %}
+				<li>
+					<h2>
+						{{ year }}
+					</h2>
+				</li>
+			{% endif %}
+			{% if month != postMonth %}
+				{% assign month=postMonth %}
+				<li>
+					<h3>
+						{{ month | replace:"January",site.i18n_january | replace:"February",site.i18n_february | replace:"March",site.i18n_march | replace:"April",site.i18n_april | replace:"May",site.i18n_may | replace:"June",site.i18n_june | replace:"July",site.i18n_july | replace:"August",site.i18n_august | replace:"September",site.i18n_september | replace:"October",site.i18n_october | replace:"November",site.i18n_november | replace:"December",site.i18n_december}}
+					</h3>
+				</li>
+			{% endif %}
 			<li>
-				<span class="daynumber--index">{{ post.date | date_to_string | replace:"Jan",site.i18n_january | replace:"Feb",site.i18n_february | replace:"Mar",site.i18n_march | replace:"Apr",site.i18n_april | replace:"May",site.i18n_may | replace:"Jun",site.i18n_june | replace:"Jul",site.i18n_july | replace:"Aug",site.i18n_august | replace:"Sep",site.i18n_september | replace:"Oct",site.i18n_october | replace:"Nov",site.i18n_november | replace:"Dec",site.i18n_december}}</span>
+				<span class="daynumber--index">
+					{{ postDay }}
+				</span>
 				<a href="{{ post.url }}">{{ post.title }}</a>
 			</li>
 		{% endfor %}

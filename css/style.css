@@ -26,7 +26,7 @@ body {
 .daynumber--index {
 	float: left;
 	text-align: center;
-	width: 9em;
+	width: 3em;
 	font-weight: bold;
 	color: #ddd;
 }
