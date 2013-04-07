@@ -1,0 +1,77 @@
+body {
+	padding-bottom: 20%;
+}
+
+.logo {
+	width: 62px;
+	height: 62px;
+	margin-top: -17px;
+	margin-bottom: -17px;
+	margin-right: 12px;
+}
+
+.dabblet {
+	width: 100%;
+    height: 600px;
+}
+
+
+.modal--iframe {
+	width: 90%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.daynumber--index {
+	float: left;
+	text-align: center;
+	width: 3em;
+	font-weight: bold;
+	color: #ddd;
+}
+
+.about-image {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	max-height: 100%;
+	right: 0;
+}
+
+.lead--about {
+	color: #1496bb;
+}
+
+article div > p:first-of-type {
+	margin-top: 4em;
+}
+
+article div > p:first-of-type::first-line {
+	font-variant: small-caps;
+}
+
+article div > p:first-of-type::first-letter {
+	font-family: Gabriola; /* available on Windows 7, and on Mac OS */
+
+	-webkit-font-feature-settings: "ss07";
+	   -moz-font-feature-settings: "ss07";
+			font-feature-settings: "ss07";
+	
+	font-size: 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #1496bb;
+	position: relative;
+}
+
+
+@media only screen and (min-width: 767px) {
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-left: -1em;
+	}
+
+}

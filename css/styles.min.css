@@ -1,0 +1,7 @@
+---
+layout: compress
+---
+
+{% include css/bootstrap.min.css %}
+{% include css/bootstrap.neg-offset.css %}
+{% include css/style.css %}
