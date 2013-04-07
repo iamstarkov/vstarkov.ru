@@ -7,74 +7,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-	<link href="/css/normalize.css" rel="stylesheet" />
-	<link href="/css/helper.css" rel="stylesheet" />
-	<link href="/css/print.css" rel="stylesheet" />
-	<link href="/css/main.css" rel="stylesheet" />
-
+	<link href="/css/styles.min.css" rel="stylesheet" />
 	<link href="{{site.site_rss}}" title="{{site.site_title}}" rel="alternate" type="application/atom+xml" />
 
 	<meta name="google-site-verification" content="{{site.g_verification}}" />
-
 </head>
 <body>
 
-<div class="wrap">
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="container">
 
-				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
+	{% include header.html %}
 
-				<!-- Be sure to leave the brand out there if you want it shown -->
-				<a class="brand" href="#">
-					<a class="brand" href="/">
-						<img src="/img/logo.svg" class="logo pull-left" alt="" />
-						{{site.site_name}}
-					</a>
-				</a>
-
-				<!-- Everything you want hidden at 940px or less, place within here -->
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li><a href="/about/">{{site.i18n_about}}</a></li>
-						<li><a href="{{site.site_rss}}">{{site.i18n_rss}}</a></li>
-					</ul>
-					
-					{% if page.isNotTranslated %}
-					
-					{% else %}
-						<ul class="nav pull-right">
-							<li>
-								<a 
-								href="{{site.mirror_url}}{{page.url | replace:"index.html",""}}	">
-									{{site.mirror_title}}
-								</a>
-							</li>
-						</ul>
-					{% endif %}
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<!-- /HEADER -->
-	
-	<div class="container">
-		<div class="row">
-			{{ content }}
-		</div>
-	</div>
-
-</div>
+	{{ content }}
 
 <script>
 	var _gaq=[['_setAccount','{{site.g_analytics_id}}'],['_trackPageview']];
