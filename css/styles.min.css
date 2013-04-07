@@ -1,0 +1,8 @@
+---
+layout: compress
+---
+
+{% include css/normalize.css %}
+{% include css/helper.css %}
+{% include css/print.css %}
+{% include css/main.css %}
