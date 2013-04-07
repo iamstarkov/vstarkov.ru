@@ -76,57 +76,6 @@
 
 </div>
 
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/plugins/fotorama.js"></script>
-<link  href="/js/plugins/fotorama.css" rel="stylesheet" />
-<script>
-	fotoramaDefaults = {
-		transition: 'fade',
-		loop: true,
-		nav: 'dots',
-		navPosition: 'top',
-		caption: 'overlay'
-	}
-
-	$(function() {
-
-		(function(){
-			var links = $('[data-target="#iframe-modal"]'),
-				modal = $('#iframe-modal');
-				modal_iframe = $('#iframe-modal iframe.dabblet');
-
-			if (!links[0]) return -1;	
-			if (!modal_iframe[0]) return -1;
-
-			links.on('click', function(event) {
-
-				modal.css({
-					'margin-left': -(modal.width()/2)
-				})
-				modal_iframe.attr('src', $(this).prop('href'))
-
-				event.preventDefault()
-			})
-		})()
-
-	});
-</script>
-
-
-<!-- Modal -->
-<div id="iframe-modal" class="modal modal--iframe hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-body">
-		<iframe class="dabblet"> </iframe>
-	</div>
-	<div class="modal-footer">
-		<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">{{site.i18n_close}}</button>
-	</div>
-</div>
-
-
 <script>
 	var _gaq=[['_setAccount','{{site.g_analytics_id}}'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
