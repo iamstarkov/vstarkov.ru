@@ -9,7 +9,7 @@ site_url:       'http://vstarkov.ru'
 site_rss:       '/atom.xml'
 site_mail:      'privet@vstarkov.ru'
 site_name:      'Владимир Старков'
-site_title:     'Владимир Старков; Технический блог'
+site_title:     'Владимир Старков; технический блог'
 
 # disqus_id:      'starkovru'
 g_analytics_id: 'UA-33089484-1'

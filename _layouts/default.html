@@ -16,9 +16,13 @@
 <body>
 
 
-	{% include header.html %}
 
-	{{ content }}
+	<div class="wrap">
+		
+		{% include header.html %}
+
+		{{ content }}
+	</div>
 
 <script>
 	var _gaq=[['_setAccount','{{site.g_analytics_id}}'],['_trackPageview']];
