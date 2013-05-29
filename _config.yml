@@ -1,6 +1,4 @@
 safe:           false
-auto:           true
-server:         yes
 permalink:      /:title/
 
 markdown:       kramdown
