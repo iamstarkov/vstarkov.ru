@@ -1,5 +1,6 @@
 safe:           false
 permalink:      /:title/
+lsi:            BOOL
 
 markdown:       kramdown
 
@@ -18,6 +19,7 @@ i18n_lang_code: 'ru'
 i18n_about:     'Обо мне'
 i18n_rss:       'РСС'
 i18n_close:     'Закрыть'
+i18n_related:   'Похожие статьи'
 
 
 i18n_cta_share:     'Расскажите друзьям про эту статью в'

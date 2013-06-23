@@ -379,3 +379,24 @@ li {
 .around-nav__prev {
     text-align: left;
 }
+
+.related-nav {
+    margin: 3em 0;
+}
+
+.related-nav__title {
+    font-weight: bold;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.related-nav__list {
+    margin-top: 0;
+}
+
+
+
+
+
+
