@@ -4,10 +4,12 @@ permalink:      /:title/
 markdown:       kramdown
 
 site_url:       'http://vstarkov.ru'
-site_rss:       '/atom.xml'
-site_mail:      'privet@vstarkov.ru'
+site_rss:       'http://feeds.feedburner.com/vstarkov/jETN'
+site_mail:      'matmuchrapna@gmail.com'
 site_name:      'Владимир Старков'
 site_title:     'Владимир Старков; технический блог'
+
+site_twitter:   'matmuchrapna'
 
 mirror_url:     'http://vstarkov.com'
 mirror_title:   'In english'
@@ -16,6 +18,13 @@ i18n_lang_code: 'ru'
 i18n_about:     'Обо мне'
 i18n_rss:       'РСС'
 i18n_close:     'Закрыть'
+
+
+i18n_cta_share:     'Расскажите друзьям про статью в'
+i18n_cta_share_and: 'и'
+i18n_cta_share_tw:  'Twitter'
+i18n_cta_share_fb:  'Facebook'
+i18n_cta_share_gp:  'Google Plus'
 
 i18n_january:   'Январь'
 i18n_february:  'Февраль'
