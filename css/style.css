@@ -165,6 +165,9 @@ p {
 }
 
 
+.styled-link:link,
+.styled-link:visited,
+.styled-link:hover,
 .entry a:link,
 .entry a:visited,
 .entry a:hover {
@@ -175,6 +178,7 @@ p {
     border-color: #C0C0C0;
 }
 
+.styled-link:hover,
 .entry a:hover {
     color: #999;
 }
@@ -349,4 +353,29 @@ li {
 
 .post__date {
     font-style: italic;
+}
+
+.article-social {
+    color: #999;
+    
+    font-family: sans-serif;
+    /*font-size: .5;*/
+}
+
+.article-social .styled-link {
+    color: inherit;
+    /* font-weight: bold; */
+}
+
+
+.around-nav {
+    margin: 3em 0;
+}
+
+.around-nav__next {
+    text-align: right;
+}
+
+.around-nav__prev {
+    text-align: left;
 }
