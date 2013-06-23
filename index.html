@@ -3,26 +3,37 @@ layout: default
 title: Владимир Старков; технический блог
 ---
 
-{% assign year="exampleYear" %}
-{% assign month="exampleMonth" %}
-{% assign day="exampleDay" %}
-
-<ul class="postlist unstyled">
-
-	{% for post in site.posts %}
-		{% assign postYear=post.date | date: "%Y" %}
-		{% assign postMonth=post.date | date: "%B" %}
-		{% assign postDay=post.date | date: "%d" %}
-
+<div class="container">
+	<div class="content">
 		
-		<li>
-			<span class="post__date">
-				{{postYear}}
-				{{postMonth | replace:"January",site.i18n_january | replace:"February",site.i18n_february | replace:"March",site.i18n_march | replace:"April",site.i18n_april | replace:"May",site.i18n_may | replace:"June",site.i18n_june | replace:"July",site.i18n_july | replace:"August",site.i18n_august | replace:"September",site.i18n_september | replace:"October",site.i18n_october | replace:"November",site.i18n_november | replace:"December",site.i18n_december }}
-				{{postDay}}
-			</span>
-			<a class="post__class" href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-	{% endfor %}
-</ul>
+		<div class="post" itemscope itemtype="http://schema.org/Article" itemref="_articleUrl">
+			{% for post in site.posts limit:1 %}
+				<div class="heading-wrap">
+					<h1 class="heading  heading--primary"><a href="/">{{site.site_name}}</a></h1>:
+					<h2 class="heading heading--secondary" itemprop="name">
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</h2>
+				</div>
+				<div class="entry" itemprop="articleBody">
+					{% assign h1 = post.content | first %}
+					{{ post.content | replace:h1,'' | replace:'</h6','</div' | replace:'<h6','<div class="h6" ' | replace:'</h5','</h6' | replace:'<h5','<h6 class="h5" ' | replace:'</h4','</h5' | replace:'<h4','<h5 class="h4" ' | replace:'</h3','</h4' | replace:'<h3','<h4 class="h3" ' | replace:'</h2','</h3' | replace:'<h2','<h3 class="h2" ' | replace:'</h1','</h2' | replace:'<h1','<h2 class="h1"' }}
+				</div>
+			{% endfor %}
+		</div>
+		<div class="timeline">
+			<div class="timeline__heading">
+				Все записи
+			</div>
+			{% include timeline.html %}
+		</div>
+		
+		<div class="subscribe__wrap">
+			<a class="subscribe__link" href="{{site.site_rss}}">
+				Подписаться
+			</a>
+		</div>
+	</div>
+</div>
+
+
 
