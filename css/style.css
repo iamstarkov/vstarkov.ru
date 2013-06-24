@@ -374,6 +374,7 @@ li {
 
 .around-nav__next {
     text-align: right;
+    margin-bottom: .5em;
 }
 
 .around-nav__prev {
@@ -395,6 +396,11 @@ li {
     margin-top: 0;
 }
 
+
+.follow {
+    text-align: center;
+    margin: 2em ;
+}
 
 
 

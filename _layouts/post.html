@@ -24,51 +24,15 @@ layout: default
 			</div>
 		</div>
 
-		<nav class="article-social">
-		   	{{site.i18n_cta_share}}
-		    <a class="styled-link" href="http://twitter.com/intent/tweet?url={{site.site_url}}{{page.url}}&amp;text={{page.title}}&amp;via={{site.site_twitter}}">
-		    	{{site.i18n_cta_share_tw}}
-		    </a>,
-		    <a class="styled-link" href="http://www.facebook.com/sharer.php?u={{site.site_url}}{{page.url}}&amp;t={{page.title}}">
-		    	{{site.i18n_cta_share_fb}}
-		    </a>
-		    {{site.i18n_cta_share_and}}
-		    <a class="styled-link" href="https://plus.google.com/share?url={{site.site_url}}{{page.url}}">
-		    	{{site.i18n_cta_share_gp}}
-		    </a>
-	    </nav>
 
-	    <nav class="related-nav">
-	    	<div class="related-nav__title">
-		    	{{site.i18n_related}}:
-	    	</div>
 
-	    	<ul class="related-nav__list">
-	    	{% for post in site.related_posts limit:3%}
-		    	<li>
-		    		<a href="{{post.url}}" class="styled-link">
-						{{post.title}}
-		    		</a>
-		    	</li>
-	    	{% endfor %}
-	    	</ul>
-	    </nav>
 
-	    <nav class="around-nav">
-			{% if page.next %} 
-		    	<div class="around-nav__next">
-					<a class="styled-link" rel="next" href="{{ page.next.url }}">
-						{{page.next.title}} →
-					</a>
-				</div>
-			{% endif %}
-			{% if page.previous %} 
-		    	<div class="around-nav__prev">
-					<a class="styled-link" rel="prev" href="{{ page.previous.url }}">
-						← {{page.previous.title}}
-					</a>
-				</div>
-			{% endif %}
-	    </nav>
+
+		{% include article-social.html %}
+		{% include related.html %}
+		{% include around-nav.html %}
+		{% include follow.html %}
+
+
 	</div>
 </div>
