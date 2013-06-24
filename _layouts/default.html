@@ -3,31 +3,32 @@
 <head>
 	{% include head.html %}
 </head>
+
 <body>
 
+<div class="meny">
+    <ul>
+        <li>asdasd</li>
+        <li>asdasd 2</li>
+        <li>asdasd 3</li>
+        <li>asdasd 4</li>
+    </ul>
+</div>
+
+<div class="meny-arrow"></div>
+
 <div class="container">
-	<div class="content">
-
-	{{ content }}
-
+	
+    <div class="content">
+    	{{ content }}
 	</div>
 </div>
 
 <!-- {% include footer.html %} -->
 
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '51aeac4ff5a1f575d5000078');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
+
+{% include invoke-meny.html %}
+{% include gauges.html %}
 
 </body>
 </html>

@@ -1,0 +1,16 @@
+var meny = Meny.create({
+    // The element that will be animated in from off screen
+    menuElement: document.querySelector( '.meny' ),
+
+    // The contents that gets pushed aside while Meny is active
+    contentsElement: document.querySelector( '.container' ),
+
+    // The alignment of the menu (top/right/bottom/left)
+    position: 'left',
+
+    // The height of the menu (when using top/bottom position)
+    height: 200,
+
+    // The width of the menu (when using left/right position)
+    width: 260
+});
