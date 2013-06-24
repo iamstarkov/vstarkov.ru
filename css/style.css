@@ -1,8 +1,4 @@
 html {
-    margin-bottom: 4em;
-}
-
-html {
     font-size: 75%; /* 1 */
     -webkit-text-size-adjust: 75%; /* 2 */
     -ms-text-size-adjust: 75%; /* 2 */
