@@ -6,7 +6,7 @@ layout: default
 	<div class="heading-wrap">
 		<div class="heading  heading--primary"><a href="/">{{site.site_name}}</a></div>:
 		<h1 class="heading heading--secondary" itemprop="name">
-			<a href="{{ page.url }}">{{ page.title }}</a>
+			<a href="{{ page.url | replace:'index.html','' }}">{{ page.title }}</a>
 		</h1>
 	</div>
 
