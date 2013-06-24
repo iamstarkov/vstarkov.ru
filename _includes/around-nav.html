@@ -2,11 +2,11 @@
 	{% if page.next %} 
     	<div class="around-nav__next">
 			{% if page.next.externalLink == null %}
-				<a href="{{ page.next.url }}">
+				<a class="styled-link" href="{{ page.next.url }}">
 					{{page.next.title}} →
 				</a>
 			{% else %}
-				<a href="{{ page.next.externalLink }}">
+				<a class="styled-link" href="{{ page.next.externalLink }}">
 					{{page.next.title}} →
 				</a>
 			{% endif %}
@@ -16,11 +16,11 @@
 	{% if page.previous %} 
     	<div class="around-nav__prev">
 			{% if page.previous.externalLink == null %}
-				<a href="{{ page.previous.url }}">
+				<a class="styled-link" href="{{ page.previous.url }}">
 					← {{page.previous.title}} →
 				</a>
 			{% else %}
-				<a href="{{ page.previous.externalLink }}">
+				<a class="styled-link" href="{{ page.previous.externalLink }}">
 					← {{page.previous.title}} →
 				</a>
 			{% endif %}

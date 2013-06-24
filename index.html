@@ -3,58 +3,46 @@ layout: default
 title: Владимир Старков; технический блог
 ---
 
-<div class="container">
-	<div class="content">
-	
-		{% assign isFoundNormalPost = 'false' %}
-		{% assign normalPostId = 0 %}
-		
-		{% for post in site.posts %}
-			{% if isFoundNormalPost != 'true' %}
+{% assign isFoundNormalPost = 'false' %}
+{% assign normalPostId = 0 %}
+
+{% for post in site.posts %}
+	{% if isFoundNormalPost != 'true' %}
+		{% if post.externalLink == null %}
+			{% assign normalPostId = forloop.index0 %}
+			{% assign isFoundNormalPost = 'true' %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+
+<div class="post" itemscope itemtype="http://schema.org/Article" itemref="_articleUrl">
+	{% for post in site.posts limit:1 offset:normalPostId %}
+		<div class="heading-wrap">
+			<h1 class="heading  heading--primary"><a href="/">{{site.site_name}}</a></h1>:
+			<h2 class="heading heading--secondary" itemprop="name">
 				{% if post.externalLink == null %}
-					{% assign normalPostId = forloop.index0 %}
-					{% assign isFoundNormalPost = 'true' %}
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				{% else %}
+					<a href="{{ post.externalLink }}">{{ post.title }}</a>
 				{% endif %}
-			{% endif %}
-		{% endfor %}
-		
-		<div class="post" itemscope itemtype="http://schema.org/Article" itemref="_articleUrl">
-			{% for post in site.posts limit:1 offset:normalPostId %}
-				<div class="heading-wrap">
-					<h1 class="heading  heading--primary"><a href="/">{{site.site_name}}</a></h1>:
-					<h2 class="heading heading--secondary" itemprop="name">
-						{% if post.externalLink == null %}
-							<a href="{{ post.url }}">{{ post.title }}</a>
-						{% else %}
-							<a href="{{ post.externalLink }}">{{ post.title }}</a>
-						{% endif %}
-					</h2>
-				</div>
+			</h2>
+		</div>
 
-				<div class="post__date">
-					{{post.date | date_to_long_string | replace:"January",site.i18n_january | replace:"February",site.i18n_february | replace:"March",site.i18n_march | replace:"April",site.i18n_april | replace:"May",site.i18n_may | replace:"June",site.i18n_june | replace:"July",site.i18n_july | replace:"August",site.i18n_august | replace:"September",site.i18n_september | replace:"October",site.i18n_october | replace:"November",site.i18n_november | replace:"December",site.i18n_december}}
-				</div>
+		<div class="post__date">
+			{{post.date | date_to_long_string | replace:"January",site.i18n_january | replace:"February",site.i18n_february | replace:"March",site.i18n_march | replace:"April",site.i18n_april | replace:"May",site.i18n_may | replace:"June",site.i18n_june | replace:"July",site.i18n_july | replace:"August",site.i18n_august | replace:"September",site.i18n_september | replace:"October",site.i18n_october | replace:"November",site.i18n_november | replace:"December",site.i18n_december}}
+		</div>
 
-				<div class="entry" itemprop="articleBody">
-					{% assign h1 = post.content | first %}
-					{{ post.content | replace:h1,'' | replace:'</h6','</div' | replace:'<h6','<div class="h6" ' | replace:'</h5','</h6' | replace:'<h5','<h6 class="h5" ' | replace:'</h4','</h5' | replace:'<h4','<h5 class="h4" ' | replace:'</h3','</h4' | replace:'<h3','<h4 class="h3" ' | replace:'</h2','</h3' | replace:'<h2','<h3 class="h2" ' | replace:'</h1','</h2' | replace:'<h1','<h2 class="h1"' }}
-				</div>
-			{% endfor %}
+		<div class="entry" itemprop="articleBody">
+			{% assign h1 = post.content | first %}
+			{{ post.content | replace:h1,'' | replace:'</h6','</div' | replace:'<h6','<div class="h6" ' | replace:'</h5','</h6' | replace:'<h5','<h6 class="h5" ' | replace:'</h4','</h5' | replace:'<h4','<h5 class="h4" ' | replace:'</h3','</h4' | replace:'<h3','<h4 class="h3" ' | replace:'</h2','</h3' | replace:'<h2','<h3 class="h2" ' | replace:'</h1','</h2' | replace:'<h1','<h2 class="h1"' }}
 		</div>
-		<div class="timeline">
-			<div class="timeline__heading">
-				Все записи
-			</div>
-			{% include timeline.html %}
-		</div>
-		
-		<div class="subscribe__wrap">
-			<a class="subscribe__link" href="{{site.site_rss}}">
-				Подписаться
-			</a>
-		</div>
-	</div>
+
+		{% include follow.html %}
+	{% endfor %}
 </div>
+
+{% include timeline.html %}
+{% include subscribe.html %}
 
 
 
