@@ -6,9 +6,11 @@
 	<ul class="related-nav__list">
 	{% for post in site.related_posts limit:3%}
     	<li>
-    		<a href="{{post.url}}" class="styled-link">
-				{{post.title}}
-    		</a>
+			{% if post.externalLink == null %}
+				<a class="styled-link" href="{{ post.url }}">{{ post.title }}</a>
+			{% else %}
+				<a class="styled-link" href="{{ post.externalLink }}">{{ post.title }}</a>
+			{% endif %}
     	</li>
 	{% endfor %}
 	</ul>
