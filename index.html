@@ -19,11 +19,7 @@ title: Владимир Старков; технический блог
 	itemscope itemtype="http://schema.org/Article" itemref="_articleUrl">
 	{% for post in site.posts limit:1 offset:normalPostId %}
 		<div class="heading-wrap">
-			<h1 class="heading  heading--primary">
-				<a href="/">
-					{{ site.i18n_site_name_short[site.locale] }}
-				</a>
-			</h1>:
+			<h1 class="heading  heading--primary"><a href="/">{{ site.i18n_site_name_short[site.locale] }}</a></h1>:
 			<h2 class="heading heading--secondary" itemprop="name">
 				{% if post.external_link == null %}
 					<a href="{{ post.url }}">{{ post.title }}</a>
