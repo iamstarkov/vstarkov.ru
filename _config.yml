@@ -11,7 +11,7 @@ site_mail:      'matmuchrapna@gmail.com'
 #mirror_title:   'In english'
 
 
-# _includes/article-social.html
+# _includes/share.html
 i18n_cta_share:     
   'en': 'Расскажите друзьям про эту статью в'
   'ru': 'Share this article to your friends from'
@@ -54,7 +54,7 @@ i18n_site_name_short:
 i18n_site_name:
   'en': 'Vladimir Starkov; professional blog'
   'ru': 'Владимир Старков; технический блог'
-i18_site_url:
+i18n_site_url:
   'en': 'http://vstarkov.com'
   'ru': 'http://vstarkov.ru'
 
