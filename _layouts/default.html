@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="LTR" lang="{{site.i18n_lang_code}}">
+<html dir="LTR" lang="{{ site.locale }}">
 <head>
 	{% include head.html %}
 </head>
@@ -13,14 +13,10 @@
 <div class="meny-arrow"></div>
 
 <div class="container">
-	
     <div class="content">
     	{{ content }}
 	</div>
 </div>
-
-<!-- {% include footer.html %} -->
-
 
 {% include meny.html %}
 {% include gauges.html %}

@@ -2,11 +2,16 @@
 layout: default
 ---
 
-<div class="post" itemscope itemtype="http://schema.org/Article" itemref="_articleUrl">
+<div class="post"
+	itemscope itemtype="http://schema.org/Article" itemref="_articleUrl">
 	<div class="heading-wrap">
-		<div class="heading  heading--primary"><a href="/">{{site.site_name}}</a></div>:
+		<div class="heading  heading--primary">
+			<a href="/">{{ site.i18n_site_name_short[site.locale] }}</a>
+		</div>:
 		<h1 class="heading heading--secondary" itemprop="name">
-			<a href="{{ page.url | replace:'index.html','' }}">{{ page.title }}</a>
+			<a href="{{ page.url | replace:'index.html','' }}">
+				{{ page.title }}
+			</a>
 		</h1>
 	</div>
 
