@@ -8,7 +8,7 @@ layout: nil
 	<link href="{{ site.i18n_rss_url[site.locale] }}" rel="self"/>
 	<link href="{{ site.i18_site_url[site.locale] }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{ site.i18_site_url[site.locale] }}</id>
+	<id>{{ site.i18n_site_url[site.locale] }}</id>
 	<author>
 		<name>{{ site.i18n_site_name_short[site.locale] }}</name>
 		<email>{{site.site_mail}}</email>

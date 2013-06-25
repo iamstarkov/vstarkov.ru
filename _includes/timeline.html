@@ -1,11 +1,13 @@
 {% assign year="exampleYear" %}
 {% assign month="exampleMonth" %}
 {% assign day="exampleDay" %}
+{% include months.html %}
 
 <div class="timeline">
 	<div class="timeline__heading">
 		{{ i18n_all_articles[site.locale] }}
 	</div>
+
 	<ul class="timeline__list">
 		{% for post in site.posts %}
 			<li class="timeline__item">
@@ -16,11 +18,11 @@
 
 			{% if year != postYear %}
 				{% assign year=postYear %}
-				<div class="timeline__year" data-text="{{year}}"></div>
+				<div class="timeline__year" data-text="{{ year }}"></div>
 			{% endif %}
 			{% if month != postMonth %}
 				{% assign month=postMonth %}
-				<div class="timeline__month" data-text="{{ month | replace:"January",site.i18n_january[site.locale] | replace:"February",site.i18n_february[site.locale] | replace:"March",site.i18n_march[site.locale] | replace:"April",site.i18n_april[site.locale] | replace:"May",site.i18n_may[site.locale] | replace:"June",site.i18n_june[site.locale] | replace:"July",site.i18n_july[site.locale] | replace:"August",site.i18n_august[site.locale] | replace:"September",site.i18n_september[site.locale] | replace:"October",site.i18n_october[site.locale] | replace:"November",site.i18n_november[site.locale] | replace:"December",site.i18n_december[site.locale] }}"></div>
+				<div class="timeline__month" data-text="{{ month | replace:"January",january | replace:"February",february | replace:"March",march | replace:"April",april | replace:"May",may | replace:"June",june | replace:"July",july | replace:"August",august | replace:"September",september | replace:"October",october | replace:"November",november | replace:"December",december }}"></div>
 						
 			{% endif %}
 				<div class="timeline__post">

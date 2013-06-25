@@ -34,7 +34,9 @@ title: Владимир Старков; технический блог
 		</div>
 
 		<div class="post__date">
-			{{post.date | date_to_long_string | replace:"January",site.i18n_january[site.locale] | replace:"February",site.i18n_february[site.locale] | replace:"March",site.i18n_march[site.locale] | replace:"April",site.i18n_april[site.locale] | replace:"May",site.i18n_may[site.locale] | replace:"June",site.i18n_june[site.locale] | replace:"July",site.i18n_july[site.locale] | replace:"August",site.i18n_august[site.locale] | replace:"September",site.i18n_september[site.locale] | replace:"October",site.i18n_october[site.locale] | replace:"November",site.i18n_november[site.locale] | replace:"December",site.i18n_december[site.locale] }}
+			{% include months.html %}
+			
+			{{ post.date | date_to_long_string  | replace:"January",january | replace:"February",february | replace:"March",march | replace:"April",april | replace:"May",may | replace:"June",june | replace:"July",july | replace:"August",august | replace:"September",september | replace:"October",october | replace:"November",november | replace:"December",december }}
 		</div>
 
 		<div class="entry" itemprop="articleBody">
