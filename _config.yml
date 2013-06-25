@@ -2,7 +2,7 @@ locale:         'ru'
 permalink:      /:title/
 
 safe:           false
-# lsi:            BOOL
+lsi:            BOOL
 markdown:       kramdown
 
 site_mail:      'matmuchrapna@gmail.com'
