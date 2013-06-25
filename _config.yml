@@ -13,8 +13,8 @@ site_mail:      'matmuchrapna@gmail.com'
 
 # _includes/share.html
 i18n_cta_share:     
-  'en': 'Расскажите друзьям про эту статью в'
-  'ru': 'Share this article to your friends from'
+  'ru': 'Расскажите друзьям про эту статью в'
+  'en': 'Share this article to your friends from'
 i18n_cta_share_tw:
   'en': 'Twitter'
   'ru': 'Twitter'
