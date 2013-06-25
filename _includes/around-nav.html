@@ -1,12 +1,12 @@
 <nav class="around-nav">
 	{% if page.next %} 
     	<div class="around-nav__next">
-			{% if page.next.externalLink == null %}
+			{% if page.next.external_link == null %}
 				<a class="styled-link" href="{{ page.next.url }}">
 					{{page.next.title}} →
 				</a>
 			{% else %}
-				<a class="styled-link" href="{{ page.next.externalLink }}">
+				<a class="styled-link" href="{{ page.next.external_link }}">
 					{{page.next.title}} →
 				</a>
 			{% endif %}
@@ -15,12 +15,12 @@
 
 	{% if page.previous %} 
     	<div class="around-nav__prev">
-			{% if page.previous.externalLink == null %}
+			{% if page.previous.external_link == null %}
 				<a class="styled-link" href="{{ page.previous.url }}">
 					← {{page.previous.title}}
 				</a>
 			{% else %}
-				<a class="styled-link" href="{{ page.previous.externalLink }}">
+				<a class="styled-link" href="{{ page.previous.external_link }}">
 					← {{page.previous.title}}
 				</a>
 			{% endif %}

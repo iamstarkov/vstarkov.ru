@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Использование консоли Google Chrome (перевод для frontender.info)
-externalLink: 'http://frontender.info/chrome-developer-tools/'
+external_link: 'http://frontender.info/chrome-developer-tools/'
 categories : [js]
 ---
 

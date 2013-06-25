@@ -5,7 +5,7 @@
     t.type  = 'text/javascript';
     t.async = true;
     t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '51aeac4ff5a1f575d5000078');
+    t.setAttribute('data-site-id', '{{ i18n_data-site-id[site.locale] }}');
     t.src = '//secure.gaug.es/track.js';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(t, s);

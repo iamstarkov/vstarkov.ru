@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Головокружительное погружение в БЭМ… (перевод для frontender.info)
-externalLink: 'http://frontender.info/MindBEMding/'
+external_link: 'http://frontender.info/MindBEMding/'
 categories : [css]
 ---
 

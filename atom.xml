@@ -4,29 +4,29 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-	<title>{{ site.site_title }}</title>
-	<link href="{{site.site_url}}{{ site.site_rss }}" rel="self"/>
-	<link href="{{site.site_url}}"/>
+	<title>{{ site.i18n_site_name[site.locale] }}</title>
+	<link href="{{ site.i18n_rss_url[site.locale] }}" rel="self"/>
+	<link href="{{ site.i18_site_url[site.locale] }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{site.site_url}}</id>
+	<id>{{ site.i18_site_url[site.locale] }}</id>
 	<author>
-	<name>{{site.site_title}}</name>
-	<email>{{site.site_mail}}</email>
+		<name>{{ site.i18n_site_name_short[site.locale] }}</name>
+		<email>{{site.site_mail}}</email>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			{% if post.externalLink == null %}
-				<link href="{{site.site_url}}{{ post.url }}"/>
+			{% if post.external_link == null %}
+				<link href="{{ site.i18_site_url[site.locale] }}{{ post.url }}"/>
 			{% else %}
-				<link href="{{ post.externalLink }}"/>
+				<link href="{{ post.external_link }}"/>
 			{% endif %}
 			
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 			
-			{% if post.externalLink == null %}
-				<id>http://vstarkov.ru{{ post.id }}</id>
+			{% if post.external_link == null %}
+				<id>{{ site.i18_site_url[site.locale] }}{{ post.id }}</id>
 				<content type="html">{{ post.content | xml_escape }}</content>
 			{% endif %}
 		</entry>

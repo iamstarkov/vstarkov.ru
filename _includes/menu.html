@@ -1,17 +1,17 @@
 <ul class="menu">
     <li class="menu__item">
         <a class="menu__link" href="/">
-            Блог
+            {{ i18n_blog[site.locale] }}
         </a>
     </li>
     <li class="menu__item">
-        <a class="menu__link" href="{{site.site_rss}}">
-            Подписаться
+        <a class="menu__link" href="{{ site.i18n_rss_url[site.locale] }}">
+            {{ i18n_subscribe[site.locale] }}
         </a>
     </li>
     <li class="menu__item">
         <a class="menu__link" href="/about/">
-            Обо мне
+            {{ i18n_about[site.locale] }}
         </a>
     </li>
 </ul>

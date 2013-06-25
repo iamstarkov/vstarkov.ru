@@ -7,18 +7,26 @@
 
 <link href="/css/style.css" rel="stylesheet" media="screen, print" />
 
-<link href="{{site.site_rss}}" title="{{site.site_name}}" rel="alternate" type="application/atom+xml" />
+<link
+	href="{{site.i18n_rss_url[site.locale]}}"
+	title="{{ site.i18n_site_name[site.locale] }}"
+	rel="alternate" type="application/atom+xml" />
 
 
 		
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@matmuchrapna" />
 
-<meta property="og:url" content="{{site.site_url}}{{page.url}}" itemprop="url" id="_articleUrl" />
+<meta
+	content="{{ site.i18_site_url[site.locale] }}{{page.url}}"
+	property="og:url"
+	itemprop="url" id="_articleUrl" />
 
-<meta property="og:title" content="{{page.title}}"/>
+<meta property="og:title" content="{{ page.title }}"/>
 				
 
-<meta property="og:site_name" content="{{site.site_name}}" />
+<meta property="og:site_name"
+	content="{{ site.i18n_site_name[site.locale] }}" />
 <meta property="og:type" content="article" />
-<meta property="article:author" content="{{site.site_url}}/about/" />
+<meta property="article:author"
+	content="{{ site.i18n_site_url[site.locale] }}/about/" />

@@ -1,13 +1,16 @@
 <nav class="article-social">
-	{{site.i18n_cta_share}}
-	<a class="styled-link" href="http://twitter.com/intent/tweet?url={{site.site_url}}{{page.url}}&amp;text={{page.title}}&amp;via={{site.site_twitter}}">
-		{{site.i18n_cta_share_tw}}
+	{{ site.i18n_cta_share[site.locale] }}
+	<a class="styled-link"
+		href="http://twitter.com/intent/tweet?url={{ site.i18n_site_url[site.locale] }}{{ page.url }}&amp;text={{page.title}}&amp;via={{ site.i18n_twitter[site.locale] }}">
+		{{ site.i18n_cta_share_tw[site.locale] }}
 	</a>,
-	<a class="styled-link" href="http://www.facebook.com/sharer.php?u={{site.site_url}}{{page.url}}&amp;t={{page.title}}">
-		{{site.i18n_cta_share_fb}}
+	<a class="styled-link"
+		href="http://www.facebook.com/sharer.php?u={{ site.i18n_site_url[site.locale] }}{{ page.url }}&amp;t={{page.title}}">
+		{{ site.i18n_cta_share_fb[site.locale] }}
 	</a>
-	{{site.i18n_cta_share_and}}
-	<a class="styled-link" href="https://plus.google.com/share?url={{site.site_url}}{{page.url}}">
-		{{site.i18n_cta_share_gp}}
+	{{ site.i18n_cta_share_and[site.locale] }}
+	<a class="styled-link"
+		href="https://plus.google.com/share?url={{ site.i18n_site_url[site.locale] }}{{ page.url }}">
+		{{ site.i18n_cta_share_gp[site.locale] }}
 	</a>
 </nav>
