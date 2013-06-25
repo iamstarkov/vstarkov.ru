@@ -1,3 +1,3 @@
 [submodule "theme"]
 	path = theme
-	url = git@github.com:matmuchrapna/vstarkov-jekyll-theme.git
+	url = https://github.com/matmuchrapna/vstarkov-jekyll-theme.git
