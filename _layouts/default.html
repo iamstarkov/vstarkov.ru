@@ -6,23 +6,36 @@
 
 <body>
 
-<div class="meny">
-    {% include menu.html %}
-</div>
-
-<div class="meny-arrow"></div>
-
-<div class="container">
-    <div class="content">
-    	{{ content }}
+<div class="wrap">
+	
+	<div class="menu-toggler__out-wrap">	
+		<div class="menu-toggler__wrap">
+			<a class="menu-toggler js_menu-toggler" href="#" title="{{ site.i18n_menu[site.locale] }}"></a>
+		</div>
 	</div>
+	
+	<div class="nav clearfix" role="navigation">
+	    {% include menu.html %}
+	</div>
+
+	<div class="container"  role="main">
+	    <div class="content">
+			{{ content }}
+		</div>
+	</div>
+
 </div>
 
-{% include meny.html %}
+<script src="/js/script.js" async defer></script>
+
+{% if site.locale == 'ru' %}
+	<script src="/js/typo.js" async defer></script>
+{% endif %}
+
+
+
+
+
 {% include gauges.html %}
-
-<script src="/js/typo.js"></script>
-
-
 </body>
 </html>

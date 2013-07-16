@@ -1,16 +1,27 @@
-var meny = Meny.create({
-    // The element that will be animated in from off screen
-    menuElement: document.querySelector( '.meny' ),
+window.scrollTo(0, 1);
 
-    // The contents that gets pushed aside while Meny is active
-    contentsElement: document.querySelector( '.container' ),
+var toggleClass = function (elem, className) {
+    if (elem) {
+        if(elem.className.indexOf(className) !== -1) {
+            elem.className = elem.className.replace(className, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+};
 
-    // The alignment of the menu (top/right/bottom/left)
-    position: 'left',
 
-    // The height of the menu (when using top/bottom position)
-    height: 200,
+var toggler = document.querySelectorAll('.js_menu-toggler')[0],
+    body = document.querySelectorAll('body')[0];
 
-    // The width of the menu (when using left/right position)
-    width: 260
+
+toggler.addEventListener('click', function(e) {
+
+    if (body.classList.toggle) {
+        body.classList.toggle('active');
+    } else {
+        toggleClass(body, 'active');
+    }
+
+    e.preventDefault();
 });

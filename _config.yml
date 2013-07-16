@@ -4,13 +4,19 @@ permalink:      /:title/
 safe:           false
 lsi:            BOOL
 markdown:       kramdown
+exclude:        ['theme']
 
 site_mail:      'matmuchrapna@gmail.com'
+
+
 
 #mirror_url:     'http://vstarkov.com'
 #mirror_title:   'In english'
 
 
+i18n_menu:
+  'ru': 'Меню'
+  'en': 'Menu'
 # _includes/share.html
 i18n_cta_share:     
   'ru': 'Расскажите друзьям про эту статью в'
