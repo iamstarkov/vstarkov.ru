@@ -239,8 +239,9 @@ var typo = (function() {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     typo.init(document.querySelectorAll(''+
-		'.entry > p, .entry > ul, .entry > ol, .entry > h1, .entry > h2, .entry > h3, .entry > h4, .entry > h5, .entry > h6'+
+		'.entry > p, .entry > ul, .entry > ol'+
+		'.entry > h1, .entry > h2, .entry > h3, .entry > h4, .entry > h5, .entry > h6'+
 		'.related-nav__list, nav, .timeline' +
-		'.heading-wrap'
+		'.heading-wrap a, .heading-wrap h1, .heading-wrap h2'
 	));
 });
