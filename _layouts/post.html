@@ -23,9 +23,7 @@ layout: default
 	</div>
 
 	<div class="entry" itemprop="articleBody">
-		{% assign h1 = content | first %}
-		{{ content | replace:h1,'' | | replace:'<h1','<h1 class="h1"' | replace:'<h2','<h2 class="h2"' | replace:'<h3','<h3 class="h3"' | replace:'<h4','<h4 class="h4"' | replace:'<h4','<h4 class="h4"' | replace:'<h5','<h5 class="h5"' | replace:'<h6','<h6 class="h6"' }}
-		
+		{{ content | replace:page.title,'' | replace:'<h1 id="section"></h1>','' | replace:'</h6','</div' | replace:'<h6','<div class="h6" ' | replace:'</h5','</h6' | replace:'<h5','<h6 class="h5" ' | replace:'</h4','</h5' | replace:'<h4','<h5 class="h4" ' | replace:'</h3','</h4' | replace:'<h3','<h4 class="h3" ' | replace:'</h2','</h3' | replace:'<h2','<h3 class="h2" ' | replace:'</h1','</h2' | replace:'<h1','<h2 class="h1"' }}
 	</div>
 </div>
 
