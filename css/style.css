@@ -121,7 +121,8 @@ body {
     font-size: 30px;
     font-size: 3rem;
     color: #333;
-    line-height: 0.8667;
+    /*line-height: 0.8667;*/
+    line-height: 1;
     font-weight: normal;
     padding: 5px 0 10px 0;
     padding: 0.5rem 0 1rem 0;
@@ -134,7 +135,8 @@ body {
     font-size: 18px;
     font-size: 1.8rem;
     color: #666;
-    line-height: 0.8334;
+    /*line-height: 0.8334;*/
+    line-height: 1;
     text-indent: 0;
     padding: 10px 0 0 0;
     padding: 1rem 0 0 0;
@@ -567,3 +569,7 @@ li {
     color: #000;
 }
 
+
+.post {
+    margin-bottom: 4em;
+}
