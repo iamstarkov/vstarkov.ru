@@ -2,7 +2,7 @@ locale:         'ru'
 permalink:      /:title/
 
 safe:           false
-lsi:            BOOL
+# lsi:            BOOL
 markdown:       kramdown
 exclude:        ['theme']
 
@@ -18,15 +18,15 @@ i18n_menu:
   'ru': 'Меню'
   'en': 'Menu'
 # _includes/share.html
-i18n_cta_share:     
+i18n_cta_share:
   'ru': 'Расскажите друзьям про эту статью в'
   'en': 'Share this article to your friends from'
 i18n_cta_share_tw:
   'en': 'Twitter'
   'ru': 'Twitter'
 i18n_cta_share_and:
-  'en': ' и '
-  'ru': ' and '
+  'en': ' and '
+  'ru': ' и '
 i18n_cta_share_fb:
   'en': 'Facebook'
   'ru': 'Facebook'
@@ -93,33 +93,33 @@ i18n_january:
 i18n_february:
   'en': 'February'
   'ru': 'Февраль'
-i18n_march:     
+i18n_march:
   'en': 'March'
   'ru': 'Март'
-i18n_april:     
+i18n_april:
   'en': 'April'
   'ru': 'Апрель'
-i18n_may:       
+i18n_may:
   'en': 'May'
   'ru': 'Май'
-i18n_june:      
+i18n_june:
   'en': 'June'
   'ru': 'Июнь'
-i18n_july:      
+i18n_july:
   'en': 'July'
   'ru': 'Июль'
-i18n_august:    
+i18n_august:
   'en': 'August'
   'ru': 'Август'
-i18n_september: 
+i18n_september:
   'en': 'September'
   'ru': 'Сентябрь'
-i18n_october:   
+i18n_october:
   'en': 'October'
   'ru': 'Октябрь'
-i18n_november:  
+i18n_november:
   'en': 'November'
   'ru': 'Ноябрь'
-i18n_december:  
+i18n_december:
   'en': 'December'
   'ru': 'Декабрь'
