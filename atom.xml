@@ -3,7 +3,7 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
+ 
 	<title>{{ site.i18n_site_name[site.locale] }}</title>
 	<link href="{{ site.i18n_rss_url[site.locale] }}" rel="self"/>
 	<link href="{{ site.i18_site_url[site.locale] }}"/>
@@ -20,16 +20,16 @@ layout: nil
 			{% if post.external_link == null %}
 				<link href="{{ site.i18_site_url[site.locale] }}{{ post.url }}"/>
 			{% else %}
-				<link href="{{ site.i18n_site_url[site.locale] }}{{ post.external_link }}"/>
+				<link href="{{ post.external_link }}"/>
 			{% endif %}
-
+			
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-
+			
 			{% if post.external_link == null %}
 				<id>{{ site.i18_site_url[site.locale] }}{{ post.id }}</id>
 				<content type="html">{{ post.content | xml_escape }}</content>
 			{% endif %}
 		</entry>
 	{% endfor %}
-
+ 
 </feed>
