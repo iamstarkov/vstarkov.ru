@@ -6,7 +6,7 @@ layout: nil
 
 	<title>{{ site.i18n_site_name[site.locale] }}</title>
 	<link href="{{ site.i18n_rss_url[site.locale] }}" rel="self"/>
-	<link href="{{ site.i18_site_url[site.locale] }}"/>
+	<link href="{{ site.i18n_site_url[site.locale] }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>{{ site.i18n_site_url[site.locale] }}</id>
 	<author>
