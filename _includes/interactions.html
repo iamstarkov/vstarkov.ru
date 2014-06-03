@@ -1,0 +1,13 @@
+<div class="interactions">
+	<a class="edit-link styled-link" href="http://prose.io/#matmuchrapna/{{ site.i18n_repo[site.locale] }}/edit/gh-pages/{{ page.path }}">Редактировать</a>
+	/
+	{% if page.issue == null %}
+		<a class="discussion-link styled-link" href="https://github.com/matmuchrapna/{{ site.i18n_repo[site.locale] }}/issues/new?title=Отзыв+на+статью+«{{ page.title | cgi_escape }}»">
+			{{ site.i18n_start_discussion[site.locale] }}
+		</a>
+	{% else %}
+		<a class="discussion-link styled-link" href="https://github.com/matmuchrapna/{{ site.i18n_repo[site.locale] }}/issues/{{ page.issue }}">
+			{{ site.i18n_join_discussion[site.locale] }}
+		</a>
+	{% endif %}
+</div>

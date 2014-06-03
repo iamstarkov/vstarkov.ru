@@ -156,7 +156,7 @@ p {
 
 .styled-link:link,
 .styled-link:visited,
-.styled-link:hover,
+.styled-link:hover
 .entry a:link,
 .entry a:visited,
 .entry a:hover {
@@ -546,4 +546,11 @@ li {
 
 .menu-toggler:hover:before {
     color: #000;
+}
+
+.interactions {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    text-shadow: 0 0 1px #FFDF00;
 }

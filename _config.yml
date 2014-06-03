@@ -34,7 +34,7 @@ i18n_cta_share_gp:
   'en': 'Google Plus'
   'ru': 'Google Plus'
 i18n_twitter:
-  'en': 'matmuchrapna'
+  'en': 'matmuchrapna_en'
   'ru': 'matmuchrapna'
 
 
@@ -48,6 +48,17 @@ i18n_cta_follow:
 i18n_data-site-id:
   'en': '51bc4a78108d7b45ec000005'
   'ru': '51aeac4ff5a1f575d5000078'
+
+# _includes/interactions.html
+i18n_repo:
+  'en': 'vstarkov.com'
+  'ru': 'vstarkov.ru'
+i18n_start_discussion:
+  'en': 'Start discussion'
+  'ru': 'Начать обсуждение'
+i18n_join_discussion:
+  'en': 'Join discussion'
+  'ru': 'Присоединиться к обсуждению'
 
 
 # _includes/head.html
@@ -85,7 +96,7 @@ i18n_related_articles:
 
 # _includes/timeline.html
 i18n_all_articles:
-  'en': 'All rticles'
+  'en': 'All articles'
   'ru': 'Все статьи'
 i18n_january:
   'en': 'January'
