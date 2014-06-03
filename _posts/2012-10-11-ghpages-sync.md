@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Как синхронизировать 'github pages' c 'master' веткой
-isNotTranslated: true
+description: После моего переезда с Tumblr на Jekyll стала очевидной проблема двух веток и их синхронизация, так как для хостинга сайта нужно иметь сайт в ветке gh-pages, но в тоже время от master никак не избавишься.
 categories : [git]
 ---
 

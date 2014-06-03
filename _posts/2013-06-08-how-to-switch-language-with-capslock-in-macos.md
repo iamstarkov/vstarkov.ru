@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Как менять раскладку с помощью CapsLock в MacOS?
-isNotTranslated: true
+description: Инструкция о том, как настроить смену раскадки по капсу в макоси
 categories : [macos]
 ---
 

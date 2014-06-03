@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Бочар — презентации без боли и смс
+description: Рассказ о зарождении инструмента по удобному созданию презентаций
 categories : [slideshow, npmjs, somekeys]
 ---
 

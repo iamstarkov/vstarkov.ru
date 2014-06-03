@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Редактирование Markdown в Sublime Text
-isNotTranslated: true
+description: В этом посте я хочу поделиться дзеном редактирования маркдауна в саблайме.
 categories : [markdown, workflow]
 ---
 

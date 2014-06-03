@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Настройки и перезагрузка серверов Apache и Nginx
-isNotTranslated: true
+description: Напоминание самому себе о том, как рестартить серверва в FreeBSD
 categories : [backend, freebsd, nginx, apache]
 ---
 

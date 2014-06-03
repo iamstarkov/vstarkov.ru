@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Как использовать Jekyll с плагинами на github pages
-isNotTranslated: true
+description: Решение проблемы неработающих плагинов на github pages
 categories : [css]
 ---
 

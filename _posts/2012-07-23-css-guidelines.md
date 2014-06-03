@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS советы и рекомендации
-isNotTranslated: true
+description: Данный документ является переводом первой версии рекоммендаций от @csswizardry
 categories : [css]
 ---
 

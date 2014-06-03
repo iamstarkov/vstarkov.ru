@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Мои интересные CSS ответы на Stackoverflow
-isNotTranslated: true
+description: Собрание интересных собственных ответов на Stackoverflow
 categories : [css]
 ---
 

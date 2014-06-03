@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Книга «Высокопроизводительный джаваскрипт» (High Performance JavaScript)
-isNotTranslated: true
+description: Николас рассказывает об интересных деталях уже известных технологий и делится неожиданными техниками оптимизации.
 categories : [js, javascript]
 ---
 

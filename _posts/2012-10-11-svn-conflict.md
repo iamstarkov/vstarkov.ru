@@ -1,7 +1,7 @@
 ---
 layout: post
 title: local delete/edit, incoming delete upon update
-isNotTranslated: true
+description: Решение распространённой проблемы в SVN
 categories : [svn]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Доступность сайтов (большой сборник)
-isNotTranslated: true
+description: Сборник материалов (статей, докладов и книг) по a11y.
 categories : [accessibility, a11y]
 ---
 

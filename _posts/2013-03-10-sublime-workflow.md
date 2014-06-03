@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sublime Text и плагины к нему
-isNotTranslated: true
+description: Я начал пользоваться [Sublime Text][1] около года назад. Этот редактор бесподобен и этот текст пишу сейчас именно в нём. Статья как раз об этом редакторе
 categories : [workspace]
 ---
 
