@@ -156,15 +156,13 @@ p {
 
 .styled-link:link,
 .styled-link:visited,
-.styled-link:hover
+.styled-link:hover,
 .entry a:link,
 .entry a:visited,
 .entry a:hover {
     color: #303030;
     text-decoration: none;
-    border-width: 0 0 1px 0;
-    border-style: none none solid none;
-    border-color: #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
 }
 
 .styled-link:hover,
