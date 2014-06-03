@@ -8,28 +8,34 @@ body {
     background: #fcfcfc;
     margin: 0;
     font-family: 'Hoefler Text', 'Times New Roman', Times, serif;
-    font-size: 24px;
     color: #333;
+    font-size: 24px;
     line-height: 36px;
+}
+
+@media screen and (max-device-width: 1300px) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .container {
     box-sizing: border-box;
-    padding: 0 18px;
+    padding: 0 76.8px;
 }
 
-@media screen and (min-device-width: 480px) {
+
+@media screen and (max-device-width: 1024px) {
     .container {
         padding: 0 35px;
     }
-
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (max-device-width: 480px) {
     .container {
-        padding: 0 76.8px;
+        padding: 0 18px;
     }
-
 }
 
 .content {
@@ -44,6 +50,15 @@ body {
     font-size: 36px;
     line-height: 43.2px;
     color: #333;
+}
+
+@media screen and (max-device-width: 1300px) {
+    .heading-wrap {
+        padding: 0;
+        margin: 12px 0;
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 .heading {
@@ -61,21 +76,17 @@ body {
     font-weight: normal;
     padding: 20px 0 0 0;
     margin: 14.4px 0;
-    margin: 1.44rem 0;
 }
 
 .entry .h2 {
     font-family: Helvetica, sans-serif;
     font-size: 30px;
-    font-size: 3rem;
     color: #333;
     /*line-height: 0.8667;*/
     line-height: 1;
     font-weight: normal;
     padding: 5px 0 10px 0;
-    padding: 0.5rem 0 1rem 0;
     margin: 25px 0;
-    margin: 2.5rem 0;
 }
 
 .entry .h3 {
@@ -87,9 +98,7 @@ body {
     line-height: 1;
     text-indent: 0;
     padding: 10px 0 0 0;
-    padding: 1rem 0 0 0;
     margin: 18px 0;
-    margin: 1.8rem 0;
 }
 
 .entry .h4 {
@@ -135,6 +144,14 @@ p {
     margin: 36px auto;
     text-indent: 0;
 }
+
+
+@media screen and (max-device-width: 1300px) {
+    p {
+        margin: 15px auto;
+    }
+}
+
 
 
 .styled-link:link,
@@ -188,6 +205,14 @@ p {
     margin: 173px 0 19px;
 }
 
+@media screen and (max-device-width: 1300px) {
+    .timeline__heading {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 15px 0 9px;
+    }
+}
+
 .timeline__list {
     margin: 0;
     padding: 0;
@@ -195,11 +220,19 @@ p {
 }
 
 .timeline__year::before {
-    margin-top: 81px;
+    margin-top: 51px;
     color: #666;
     font-family: Verdana, sans-serif;
     font-size: 25px;
     font-weight: bold;
+}
+
+@media screen and (max-device-width: 1300px) {
+    .timeline__year::before {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .timeline__month::before,
@@ -218,6 +251,22 @@ p {
 
 .timeline__post {
     padding-left: 132px;
+}
+
+@media screen and (max-device-width: 1300px) and (orientation: portrait) {
+    .timeline__month {
+        font-weight: normal;
+    }
+    .timeline__post {
+        padding-left: 50px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .timeline__day::before {
+        display: none;
+    }
 }
 
 .subscribe__wrap {
