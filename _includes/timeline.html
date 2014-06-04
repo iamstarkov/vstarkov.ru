@@ -11,10 +11,10 @@
 	<ul class="timeline__list">
 		{% for post in site.posts %}
 			<li class="timeline__item">
-				
+
 			{% assign postYear=post.date | date: "%Y" %}
 			{% assign postMonth=post.date | date: "%B" %}
-			{% assign postDay=post.date | date: "%d" %}
+			{% assign postDay=post.date | date: "%d" | replace:'0','' %}
 
 			{% if year != postYear %}
 				{% assign year=postYear %}
@@ -22,8 +22,8 @@
 			{% endif %}
 			{% if month != postMonth %}
 				{% assign month=postMonth %}
-				<div class="timeline__month" data-text="{{ month | replace:"January",january | replace:"February",february | replace:"March",march | replace:"April",april | replace:"May",may | replace:"June",june | replace:"July",july | replace:"August",august | replace:"September",september | replace:"October",october | replace:"November",november | replace:"December",december }}"></div>
-						
+				<div class="timeline__month" data-text="{{ month | replace:"january",january | replace:"february",february | replace:"march",march | replace:"april",april | replace:"may",may | replace:"june",june | replace:"july",july | replace:"august",august | replace:"september",september | replace:"october",october | replace:"november",november | replace:"december",december }}"></div>
+
 			{% endif %}
 				<div class="timeline__post">
 					<div class="timeline__day" data-text="{{postDay}}"></div>

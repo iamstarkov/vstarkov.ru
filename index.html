@@ -32,7 +32,15 @@ title: Владимир Старков; технический блог
 		<div class="post__date">
 			{% include months.html %}
 
-			{{ post.date | date_to_long_string  | replace:"January",january | replace:"February",february | replace:"March",march | replace:"April",april | replace:"May",may | replace:"June",june | replace:"July",july | replace:"August",august | replace:"September",september | replace:"October",october | replace:"November",november | replace:"December",december }}
+			{% assign postYear=post.date | date: "%Y" %}
+			{% assign postMonth=post.date | date: "%B" | downcase %}
+			{% assign postDay=post.date | date: "%d" | replace:'0','' %}
+
+			{% assign postMonth=postMonth | replace:"january",january | replace:"february",february | replace:"march",march | replace:"april",april | replace:"may",may | replace:"june",june | replace:"july",july | replace:"august",august | replace:"september",september | replace:"october",october | replace:"november",november | replace:"december",december %}
+
+			{{ postDay }}
+			{{ postMonth }}
+			{{ postYear }}
 		</div>
 
 		<div class="entry" itemprop="articleBody">
