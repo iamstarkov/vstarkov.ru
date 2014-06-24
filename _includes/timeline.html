@@ -22,7 +22,9 @@
 			{% endif %}
 			{% if month != postMonth %}
 				{% assign month=postMonth %}
-				<div class="timeline__month" data-text="{{ month | replace:"january",january | replace:"february",february | replace:"march",march | replace:"april",april | replace:"may",may | replace:"june",june | replace:"july",july | replace:"august",august | replace:"september",september | replace:"october",october | replace:"november",november | replace:"december",december }}"></div>
+				{% assign readyMonth=month | downcase | replace:"january",january | replace:"february",february | replace:"march",march | replace:"april",april | replace:"may",may | replace:"june",june | replace:"july",july | replace:"august",august | replace:"september",september | replace:"october",october | replace:"november",november | replace:"december",december %}
+
+				<div class="timeline__month" data-text="{{ readyMonth }}"></div>
 
 			{% endif %}
 				<div class="timeline__post">

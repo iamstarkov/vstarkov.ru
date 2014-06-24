@@ -233,6 +233,10 @@ p {
     }
 }
 
+.timeline__month::before {
+    text-transform: capitalize;
+}
+
 .timeline__month::before,
 .timeline__day::before {
     font-weight: bold;

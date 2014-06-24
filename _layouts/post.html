@@ -23,7 +23,7 @@ layout: default
 		{% assign postMonth=page.date | date: "%B" | downcase %}
 		{% assign postDay=page.date | date: "%d" | replace:'0','' %}
 
-		{% assign postMonth=postMonth | replace:"january",january | replace:"february",february | replace:"march",march | replace:"april",april | replace:"may",may | replace:"june",june | replace:"july",july | replace:"august",august | replace:"september",september | replace:"october",october | replace:"november",november | replace:"december",december %}
+		{% assign postMonth=postMonth | replace:"january",januaryGEN | replace:"february",februaryGEN | replace:"march",marchGEN | replace:"april",aprilGEN | replace:"may",mayGEN | replace:"june",juneGEN | replace:"july",julyGEN | replace:"august",augustGEN | replace:"september",septemberGEN | replace:"october",octoberGEN | replace:"november",novemberGEN | replace:"december",decemberGEN %}
 
 		{{ postDay }}
 		{{ postMonth }}

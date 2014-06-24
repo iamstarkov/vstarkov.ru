@@ -100,37 +100,73 @@ i18n_all_articles:
   'ru': 'Все статьи'
 i18n_january:
   'en': 'january'
+  'ru': 'январь'
+i18n_januaryGEN:
+  'en': 'january'
   'ru': 'января'
 i18n_february:
+  'en': 'february'
+  'ru': 'февраль'
+i18n_februaryGEN:
   'en': 'february'
   'ru': 'февраля'
 i18n_march:
   'en': 'march'
+  'ru': 'март'
+i18n_marchGEN:
+  'en': 'march'
   'ru': 'марта'
 i18n_april:
+  'en': 'april'
+  'ru': 'апрель'
+i18n_aprilGEN:
   'en': 'april'
   'ru': 'апреля'
 i18n_may:
   'en': 'may'
+  'ru': 'май'
+i18n_mayGEN:
+  'en': 'may'
   'ru': 'мая'
 i18n_june:
+  'en': 'june'
+  'ru': 'июнь'
+i18n_juneGEN:
   'en': 'june'
   'ru': 'июня'
 i18n_july:
   'en': 'july'
+  'ru': 'июль'
+i18n_julyGEN:
+  'en': 'july'
   'ru': 'июля'
 i18n_august:
+  'en': 'august'
+  'ru': 'август'
+i18n_augustGEN:
   'en': 'august'
   'ru': 'августа'
 i18n_september:
   'en': 'september'
+  'ru': 'сентябрь'
+i18n_septemberGEN:
+  'en': 'september'
   'ru': 'сентября'
 i18n_october:
+  'en': 'october'
+  'ru': 'октябрь'
+i18n_octoberGEN:
   'en': 'october'
   'ru': 'октября'
 i18n_november:
   'en': 'november'
+  'ru': 'ноябрь'
+i18n_novemberGEN:
+  'en': 'november'
   'ru': 'ноября'
 i18n_december:
+  'en': 'december'
+  'ru': 'декабрь'
+i18n_decemberGEN:
   'en': 'december'
   'ru': 'декабря'
