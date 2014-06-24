@@ -5,6 +5,7 @@ description: "Однажды я набил себе шишек в создани
 categories: 
   - css
 published: true
+issue: 19
 ---
 
 5 хитростей при создании отзывчивого сайта
