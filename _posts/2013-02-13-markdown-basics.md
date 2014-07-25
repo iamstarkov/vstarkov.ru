@@ -1,21 +1,25 @@
 ---
 layout: post
 title: Основы markdown
-description: Маркдаун — самое удобное и интуитивно понятное для редактирования текста, что можно было встретить в интернете. Его используют СтекОверфлоу и Гитхаб, что уже означает повсеместность формата.
-categories : [markdown, workspace]
+description: "Маркдаун — самое удобное и интуитивно понятное для редактирования текста, что можно было встретить в интернете. Его используют СтекОверфлоу и Гитхаб, что уже означает повсеместность формата."
+categories: 
+  - markdown
+  - workspace
+published: true
 ---
 
 Основы markdown
 ================================================================================
 
 1. [Вступление](#intro)
-1. [Заголовки](#headings)
-2. [Форматирование текста](#text-formatting)
-3. [Вставка ссылок и картинок](#links-n-images)
-4. [Списки](#lists)
-5. [Форматирование кода](#code)
-6. [Цитаты](#cite)
-7. [Обычный HTML](#html)
+2. [Онлайн-редакторы](#online-editors)
+3. [Заголовки](#headings)
+4. [Форматирование текста](#text-formatting)
+5. [Вставка ссылок и картинок](#links-n-images)
+6. [Списки](#lists)
+7. [Форматирование кода](#code)
+8. [Цитаты](#cite)
+9. [Обычный HTML](#html)
 
 <h2 id="intro"><a href="#intro">
     Вступление
@@ -49,7 +53,12 @@ HTML. На данный момент трансляторов существуе
 Код из статьи (её [**маркдаун-исходник**](https://raw.github.com/matmuchrapna-sites/vstarkov.ru/gh-pages/_posts/2013-02-13-markdown-basics.md) лежит на гитхабе) можно тестировать в онлайн
 редакторах:
 
-* [http://stackoverflow.com/](http://stackoverflow.com/) — очень удобный редактор с превью и хоткеями
+<h2 id="headings"><a href="#online-editors">
+    Онлайн-редакторы
+</a></h2>
+
+* [stackedit](https://stackedit.io/) — самый удобный редактор
+* [http://stackoverflow.com/](http://stackoverflow.com/) — удобный редактор с превью и хоткеями
 * [http://gist.github.com/](http://gist.github.com/) — выбрать формат `markdown`
 * [http://markable.in/editor/](http://markable.in/editor/)
 
