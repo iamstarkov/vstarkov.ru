@@ -53,7 +53,7 @@ HTML. На данный момент трансляторов существуе
 Код из статьи (её [**маркдаун-исходник**](https://raw.github.com/matmuchrapna-sites/vstarkov.ru/gh-pages/_posts/2013-02-13-markdown-basics.md) лежит на гитхабе) можно тестировать в онлайн
 редакторах:
 
-<h2 id="headings"><a href="#online-editors">
+<h2 id="online-editors"><a href="#online-editors">
     Онлайн-редакторы
 </a></h2>
 
