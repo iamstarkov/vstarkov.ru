@@ -51,7 +51,7 @@ Opengraph метатеги нужны, чтобы после того, как ч
 Жмите «Request Approval», заполните небольшую форму и через небольшое время (примерно 15 минут) твиттер
 начнёт показывать твиты о страницах вашего сайта с дополнительной информацией:
 
-[![карточка у медузы](http://i.imgur.com/jZLZUtf.png)][https://twitter.com/meduzaproject/status/547456821741768705]
+[![карточка у медузы](http://i.imgur.com/jZLZUtf.png)](https://twitter.com/meduzaproject/status/547456821741768705)
 
 [cards-types]: https://dev.twitter.com/cards/types
 [summary-card]: https://dev.twitter.com/cards/types/summary
