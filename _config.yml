@@ -6,8 +6,6 @@ safe:           false
 markdown:       kramdown
 exclude:        ['theme']
 
-kramdown:
-  input: GFM
 
 site_mail:      'matmuchrapna@gmail.com'
 
