@@ -40,11 +40,11 @@ Opengraph метатеги нужны, чтобы после того, как ч
 ```
 
 Замените @getbem на ваш твиттер аккаунт. Более точную настройку можно провести
-с помощью референса от твиттера — https://dev.twitter.com/cards/markup.
+с помощью [справки от твиттера][cards].
 
 После того, как настроите карточку как вам хочется,
 останется только проверить её и заапрувить ваш домен для системы Twitter cards.
-Это делается с помощью [валидатора][validator] Twitter Cards. После того как исправите все недочёты
+Это делается с помощью [валидатора Twitter Cards][validator]. После того как исправите все недочёты
 (если они есть), твиттер предложит заапрувить ваш сайт в свою систему карточек:
 ![](http://i.imgur.com/WOOWs22.png)
 
@@ -53,6 +53,7 @@ Opengraph метатеги нужны, чтобы после того, как ч
 
 [![карточка у медузы](http://i.imgur.com/jZLZUtf.png)](https://twitter.com/meduzaproject/status/547456821741768705)
 
+[cards]: https://dev.twitter.com/cards/markup
 [cards-types]: https://dev.twitter.com/cards/types
 [summary-card]: https://dev.twitter.com/cards/types/summary
 [gb]: http://getbem.com
