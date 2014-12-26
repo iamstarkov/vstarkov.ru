@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Opengraph
-description: Как добавить opengraph-метатеги и twitter cards на ваш сайт
+title: Как добавить opengraph-метатеги и twitter cards на ваш сайт.
+description: Opengraph метатеги нужны, чтобы после того, как человек поделился страницей
+вашего сайта в своей социальной сети — запись об этом выглядела достойно и так как вам хочется.
 categories : [html, frontend]
 ---
 
