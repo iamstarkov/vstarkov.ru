@@ -7,7 +7,7 @@ markdown:       kramdown
 exclude:        ['theme']
 
 
-site_mail:      'matmuchrapna@gmail.com'
+site_mail:      'iamstarkov@gmail.com'
 
 
 
@@ -35,8 +35,8 @@ i18n_cta_share_gp:
   'en': 'Google Plus'
   'ru': 'Google Plus'
 i18n_twitter:
-  'en': 'matmuchrapna_en'
-  'ru': 'matmuchrapna'
+  'en': 'iamstarkov'
+  'ru': 'iamstarkov'
 
 
 # _includes/follow.html
